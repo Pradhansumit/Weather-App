@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.334);
+}
+
+.input-container form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container>* {
+  font-size: 15px;
+}
+
+input[type=text] {
+  background: transparent;
+  border: solid 2px rgba(255, 255, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+input[type=text]:focus {
+  outline: solid 2px rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: solid 2px rgba(255, 255, 255, 0.334);
+  transition: all ease .3s;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.temperature-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.humidity-wind-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.inner-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.h-image {
+  height: 20px;
+  width: 20px;
+  filter: brightness(0) invert(1%);
+}
